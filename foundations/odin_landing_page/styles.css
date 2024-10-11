@@ -1,0 +1,240 @@
+/* following declaration used to visualize everything */
+
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    margin: 0px;
+}
+
+.container {
+    height: 250px;
+    width: auto;
+}
+
+.container#box1 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* align-items: stretch; */
+    flex-wrap: wrap;
+
+    font-size: 20px;
+}
+
+.B1, 
+.B2 {
+    width: 75%;
+    overflow: hidden;
+    flex: 1;
+}
+
+.B1 {
+    margin-top: 10px;
+    display: flex;
+    height: 0px;
+    gap: 15px;
+    /* gap is used for flex item not flex parent */
+}
+
+.B2 {
+    display: flex;
+    align-items: center;
+    flex-grow: 9;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.BB1 {
+    height: 50%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.BB1 .thing {
+    flex: 2;
+}
+
+.BB1 .thing.button {
+    flex-grow: 1;
+}
+
+.BB2 {
+    color: black;
+    height: 50%;
+    flex: 1;
+    background-color: #E5E7EB;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.BB2 .image {
+    align-self: center;
+}
+
+.button {
+    background-color: #3882F6;
+    color: white;
+    width: 70px;
+    height: 25px;
+    border-radius: 7px;
+    overflow: hidden;
+
+    font-size: 15px;
+    padding: 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.b1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.b1 .some {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.b2 {
+    height: 70%;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.a {
+    width: 100px;
+    flex-basis: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.a .square {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.a .text {
+    flex-grow: 0;
+    flex-basis: auto;
+    overflow: hidden;
+}
+
+.square {
+    height: 100px;
+    border-radius: 7px;
+    border: 2px solid #3882F6;
+}
+
+#box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    color: #1F2937;
+    width: 65%;
+    font-size: 32px;
+}
+
+.person {
+    text-align: end;
+    width: 65%;
+}
+
+#box4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    color: white;
+    width: 75%;
+    height: 50%;
+    border-radius: 7px;
+    background-color: #3882F6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.texty {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+}
+
+.big,
+.small {
+    flex: 1;
+}
+
+.big {
+    font-weight: 900;
+}
+
+.other {
+    align-self: center;
+}
+
+.other.button {
+    border: 1px solid white;
+}
+
+#box5 {
+    height: 40px;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navy {
+    background-color: #1F2937;
+}
+
+#box3 {
+    background-color: #E5E7EB;
+}
+
+.abc {
+    font-weight: 900;
+}
