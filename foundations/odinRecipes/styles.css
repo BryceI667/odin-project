@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: pink;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul,
+ol {
+    text-align: left;
+}
+
+.pbj {
+    background-color: #E6B3FF;
+    color: #4D3300;
+}
+
+.servingSize {
+    font-style: italic;
+}
+
+.outside .inside {
+    font-size: 30px;
+}
+
+hr {
+    background-color: green;
+    height: 5px;
+    width: 60%;
+    margin: 10px auto 30px;
+}
