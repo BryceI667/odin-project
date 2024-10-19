@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+  </head>
+  <body>
+      <section>
+        <img src="dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the  <a target="_blank" rel="noopener noreferrer" href="https://www.mozilla.org/">Mozilla homepage</a></p>
+      </section>
+      <script>
+        const link = document.querySelector("a");
+        link.textContent = "Odin Project!";
+        link.href = "https://www.theodinproject.com/dashboard"; 
+
+        const sect = document.querySelector("section");
+        sect.setAttribute("style", "background-color: yellow; width: 30%; border: solid 2px green; height: 50vh; overflow: hidden;");
+
+        // create element, text, class/id, style, add element
+        const para = document.createElement("p");
+        para.textContent = "DOM created element";
+        para.classList = "mary poppins";
+        para.setAttribute("style", "color: pink; text-align: end; text-decoration: line-through; letter-spacing: 15px; vertical-align: bottom; height: 30%; margin: 10px; border: 2px solid red; display: inline-block;");
+        sect.append(para);
+
+        const text = document.createTextNode(" - a great website that teaches great things.");
+        const linkPara = document.querySelector("p");
+        linkPara.appendChild(text);
+        sect.appendChild(linkPara);
+      </script>
+  </body>
+</html>

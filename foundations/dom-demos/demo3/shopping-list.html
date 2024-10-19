@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 12px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item">
+      <button id="add">Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+    <!-- TODO: IMPLEMENT GROCERY LIST -->
+    <script>
+      // get references to list, input, and button 
+      const ulist = document.querySelector("ul");
+      let uinput = document.querySelector("#item");
+      const btn = document.querySelector("#add");
+      
+      // this adds the grocery item when button is clicked
+      btn.addEventListener("click", () => {
+        const grocery = uinput.value;
+        uinput.value = "";
+
+        const item = document.createElement("li");
+        const span = document.createElement("span");
+        const newbtn = document.createElement("button");
+        item.append(span, newbtn);
+        span.textContent = grocery;
+        newbtn.textContent = "Delete";
+        ulist.appendChild(item);
+
+        // focus() method will ready next input when button clicked 
+        uinput.focus();
+
+        // this removes a grocery item
+        newbtn.addEventListener("click", () => {
+          item.remove();
+        });
+      });
+
+      // use if you want to submit by pressing enter instead of button
+      // uinput.addEventListener("keydown", ()=> { 
+      //   if (event.key == "Enter") {
+      //     console.count("hi");
+      //   }
+      // })
+    </script>
+  </body>
+</html>
