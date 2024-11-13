@@ -8,10 +8,11 @@ This repo contains all of my projects and coursework submissions from the **Odin
 | ---- | ---| --- | --- |
 | [Foundations](./foundations/)  | HTML Foundations | [Links & Images](./foundations/odin-links-and-images/) | [Recipe Website](./foundations/odinRecipes/) |
 | [Foundations](./foundations/)  | CSS Foundations | [Flexbox](./foundations/flexbox/) | [Landing Page](./foundations/odin_landing_page/) |
-| [Foundations](./foundations/) | JavaScript Basics | [JavaScript Exercises][js-exercises] <br> [DOM Demos](./foundations/dom-demos/)| [Rock Paper Scissors](./foundations/rock-paper-scissors/) |
+| [Foundations](./foundations/) | JavaScript Basics | [JavaScript Exercises][js-exercises] <br> [DOM Demos](./foundations/dom-demos/)| [Rock Paper Scissors](./foundations/rock-paper-scissors/)<br>[Etch-A-Sketch][etchsketch] |
 
 CSS Foundations
 Flexbox
 JavaScript Basics
 
 [js-exercises]: https://github.com/BryceI667/javascript-exercises
+[etchsketch]: https://github.com/BryceI667/odin-etch-a-sketch

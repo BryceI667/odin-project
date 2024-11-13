@@ -41,14 +41,16 @@ let x = 1;
 playGame();
 function playGame() {
     let user = 0, bot = 0;
+    text.textContent = "0 - 0"
+    result.appendChild(text);
     reset = document.querySelector(".buttons2 .reset");
     reset.addEventListener("click", () => {
-        round.textContent = "";
+        round.textContent = "Pick rock, paper, or scissors to start!";
         text.remove();
         replay.remove();
         user = bot = 0;
-        p1.textContent = "";
-        p2.textContent = "";
+        p1.textContent = "???";
+        p2.textContent = "???";
         x=1
     });
 
@@ -88,6 +90,7 @@ function playGame() {
                 } else if (point === 2) {
                     bot++;
                 }
+                text.textContent = `${user} - ${bot}`
                 if (user === 2 || bot === 2) {
                     button.classList.remove("user-hover");
                     if (user === 2) {
@@ -102,10 +105,10 @@ function playGame() {
                     result.appendChild(replay);
                     replay.addEventListener("click", () => {
                         text.remove();
-                        round.textContent = "";
+                        round.textContent = "Pick rock, paper, or scissors to start!";
                         replay.remove();
-                        p1.textContent = "";
-                        p2.textContent = "";
+                        p1.textContent = "???";
+                        p2.textContent = "???";
                         user = bot = 0;
                         x=1;
                     });
